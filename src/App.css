@@ -1,5 +1,23 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App > .inner-container{
+ display: flex;
+ gap: 10px;
+ flex-direction: column;
+}
+
+.App > .inner-container > .interaction-buttons > button{
+  min-width: 120px;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .App-logo {
