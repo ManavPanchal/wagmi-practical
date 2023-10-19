@@ -5,18 +5,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.App > .inner-container{
- display: flex;
- gap: 10px;
- flex-direction: column;
+.App > .inner-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
-.App > .inner-container > .interaction-buttons > button{
+.App > .inner-container > .interaction-buttons > button {
   min-width: 120px;
   padding: 10px;
   margin-left: 5px;
+  cursor: pointer;
+}
+
+.connect-wallet-button {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+}
+
+.connect-wallet-button > button {
+  color: white;
+  background: #000;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
 }
 
